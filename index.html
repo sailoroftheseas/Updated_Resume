@@ -674,6 +674,88 @@
     }
 }
 
+#tocdiv {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.dropbtn2 {
+            
+            background-color: #00dbdf;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 25px;
+            z-index: 1;
+        
+        }
+        
+        .dropdown2 {
+    
+            position: relative;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .dropdown-content2 {
+    
+            display: none;
+            position: relative;
+            right: 0;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+    
+        }
+        
+        .dropdown-content2 a {
+    
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+    
+        }
+        
+        .dropdown-content2 a:hover {
+    
+            background-color: #f1f1f1;
+    
+            }
+        
+        .dropdown2:hover .dropdown-content2 {
+    
+            display: block;
+    
+            }
+        
+        .dropdown2:hover .dropbtn2 {
+    
+            background-color: #00cbce;
+    
+            }
+        
+        
+        .tocbutton {
+            border: none;
+            color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        }
+
+        .tocbutton:hover {
+            background-color: #f1f1f1;
+
+        }
+
         
  </style>
         
@@ -682,9 +764,10 @@
 <body>
       
     <div id="resumeheader">
-        <div class="dropdown" style="float:right;">
+        <div class="dropdown" style="float:right; position: fixed; z-index: 3;">
             <button class="dropbtn fa fa-search"></button>
             <div class="dropdown-content">
+            <a href="#projump">Professional Summary</a>
             <a href="#skillsjump">Skills</a>
             <a href="#edujump">Education</a>
             <a href="#workjump">Work History</a>
@@ -706,7 +789,26 @@
     <hr>
     </div>
 
-    <h2>Professional Summary</h2>
+    <!-- <h2>Table of Contents</h2>
+            
+
+            <section id="text_section">
+                
+                <div id="tocdiv">
+                        <div class="dropdown2">
+                        <button class="dropbtn2">Table of Contents</button>
+                        <div class="dropdown-content2">
+                            <a href="#projump">Professional Summary</a>
+                            <a href="#skillsjump">Skills</a>
+                            <a href="#edujump">Education</a>
+                            <a href="#workjump">Work History</a>
+                            <a href="#contactjump">Contact Me</a>
+                        </div>
+                      </div>
+                    </div> -->
+
+
+    <h2 id="projump">Professional Summary</h2>
     <div id="prosum">
     <p class="prosump">Motivated professional offering proficiency in computer programming and web development combined with strong mathematical, writing, and analytical thinking skills. Fast learner and committed to continuous, self-directed learning. Hardworking, respectful, and reliable team member. Efficiently completes assigned tasks with strong focus on quality and attention to detail. Dedicated and dependable team player with exceptional customer service abilities, eager to learn new techniques and skills.
         </p>
